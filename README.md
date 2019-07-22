@@ -74,7 +74,7 @@ To Build the pacakge
 
 To Run the application
 
-*java -jar {target_dir}/BikeSimulation-0.0.1-SNAPSHOT <Argument 1> 
+*     java -jar {target_dir}/BikeSimulation-0.0.1-SNAPSHOT <Argument 1> 
 
   example : 
   java -jar C:\Users\tripaank\eclipse-workspace-jee\BikeSimulationChallenge\target\BikeSimulation-0.0.1-SNAPSHOT "C:\\Users\\tripaank\\Documents\\test.txt"
