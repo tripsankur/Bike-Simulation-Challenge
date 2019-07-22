@@ -41,10 +41,10 @@ This application is written in Java 8. It performs below functions.
 ## Assumptinos
 
 * The size of the Board(plateau) is 7x7.
-* If the command 'M' takes the cordinate to out of the Board(plateau), the action will not be performed.
+* If the command 'FORWARD' takes the cordinate to out of the Board(plateau), the action will not be performed.
 * If the intial position of the bike is being sent as invalid coordinate (Not in the Board(plateau)), InvalidPositionException is thrown.
 * Input format is defined and followed. (Exception is thrown in case the input format is not correct.)
-* Excpetion InvaliActionException is thrown by the application, if the Action is different than 'L','R','M'.
+* Excpetion InvaliActionException is thrown by the application, if the Action is different than mentioned above in the requirement.
 
 ## How it works
 
