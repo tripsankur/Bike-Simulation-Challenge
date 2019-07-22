@@ -38,7 +38,7 @@ This application is written in Java 8. It performs below functions.
     
 * This application prints the final position of each of the bike as output on the terminal once GPS_REPORT is processed.
 
-## Assumptinos
+## Assumptions
 
 * The size of the Board(plateau) is 7x7.
 * If the command 'FORWARD' takes the cordinate to out of the Board(plateau), the action will not be performed.
@@ -63,7 +63,7 @@ This application takes 1 argument as below.
 ## Future Possible Improvements 
 * Program to have configuration file from where it takes the parameters.
 * Program to have defined input directory, and it should poll the directory for any new input file and process the input file once it it available.
-* Application can be imporved to run more than one bike at a time on the given board.
+* Application can be improved  to run more than one bike at a time on the given board.
 
 
 ## How to Build and Run.
