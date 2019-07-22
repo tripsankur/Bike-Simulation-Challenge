@@ -1,6 +1,7 @@
 package com.trips.ankur.solutions.bikesimulation;
 
 
+import com.trips.ankur.solutions.bikesimulation.exceptions.InvalidActionException;
 import com.trips.ankur.solutions.bikesimulation.exceptions.InvalidFacingException;
 import com.trips.ankur.solutions.bikesimulation.exceptions.InvalidPositionException;
 
@@ -17,7 +18,7 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class Bike {
+public class Bike implements CommandProcessor{
 	private int endX = Integer.MAX_VALUE;
 	private int endY = Integer.MAX_VALUE;
 	
@@ -64,7 +65,7 @@ public class Bike {
 	 * @param commands
 	 * @return
 	 */
-	
+	@Override
 	public void process(String commands) {
 		String[] command=commands.split(" ");
 		
@@ -80,6 +81,8 @@ public class Bike {
 						String facing=place[2];
 						setPosition(x, y, facing);				
 					}
+				}else {
+					throw new InvalidActionException("Invalid Action: PLACE command does not contain correct arguments. Format should be PLACE <X>,<Y>,<Facing-direction>.");
 				}
 				break;
 			
@@ -100,7 +103,12 @@ public class Bike {
 				break;
 				
 			default:
-				break;
+				throw new InvalidActionException("Invalid Action: Correct command not provided. List of correct commands are: 1) PLACE <X>,<Y>,<Facing-direction>\r\n" + 
+						"2. FORWARD\r\n" + 
+						"3. TURN_LEFT\r\n" + 
+						"4. TURN_RIGHT\r\n" + 
+						"5. GPS_REPORT");
+				
 		}
 		
 	}
@@ -160,5 +168,9 @@ public class Bike {
 		else if(this.facing == Facing.EAST)
 			this.facing =Facing.SOUTH;
 	}
+
+
+
+
 	
 }
