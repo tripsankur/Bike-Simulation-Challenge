@@ -1,0 +1,10 @@
+com\trips\ankur\solutions\bikesimulation\bikeMove.class
+com\trips\ankur\solutions\bikesimulation\exceptions\NotEnoughArgumentException.class
+com\trips\ankur\solutions\bikesimulation\Bike.class
+com\trips\ankur\solutions\bikesimulation\main\BikeController.class
+com\trips\ankur\solutions\bikesimulation\Facing.class
+com\trips\ankur\solutions\bikesimulation\exceptions\InvalidActionException.class
+com\trips\ankur\solutions\bikesimulation\exceptions\InvalidPositionException.class
+com\trips\ankur\solutions\bikesimulation\Position.class
+com\trips\ankur\solutions\bikesimulation\Board.class
+com\trips\ankur\solutions\bikesimulation\exceptions\InvalidFacingException.class
